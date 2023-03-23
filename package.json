@@ -1,17 +1,23 @@
 {
-  "name": "ejs_practice",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "emart_pariseva",
+  "version": "1.2.0",
+  "description": "node express supermarket application",
+  "main": "app.js",
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Agniva Mukhopadhyay",
   "license": "ISC",
   "dependencies": {
     "d3": "^7.6.1",
     "d3-node": "^3.0.0",
+    "dotenv": "^16.0.3",
     "ejs": "^3.1.8",
     "express": "^4.18.2",
     "fs": "^0.0.1-security",

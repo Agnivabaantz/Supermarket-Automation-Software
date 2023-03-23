@@ -1,4 +1,6 @@
 // Importing and running express
+require('dotenv').config()
+
 const express = require('express');
 const app = express();
 const path = require('path');
@@ -23,6 +25,8 @@ app.use(express.static(path.join(__dirname, 'public')))
 **** Objects and Functions
 */
 // Billing Details Object
+const PORT = process.env.PORT || 8080
+console.log("My name is ",process.env.myname)
 let billObject = {
     "totalItems" : 0,
     "items" : []
@@ -319,6 +323,6 @@ app.post('/home/statistics/print',(req,res) =>{
     res.render('print_statistics',{stats})
 })
 
-app.listen(8080, () => {
+app.listen(PORT, () => {
     console.log('Listening to server at port 8080');
 })
