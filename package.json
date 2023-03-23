@@ -3,9 +3,6 @@
   "version": "1.2.0",
   "description": "node express supermarket application",
   "main": "app.js",
-  "engines": {
-    "node": "18.x"
-  },
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js",

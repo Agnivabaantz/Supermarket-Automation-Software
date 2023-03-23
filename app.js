@@ -324,5 +324,5 @@ app.post('/home/statistics/print',(req,res) =>{
 })
 
 app.listen(PORT, () => {
-    console.log('Listening to server at port 8080');
+    console.log('Listening to server at port',PORT);
 })
